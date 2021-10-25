@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --teal: #009999;
+    --gris: #808080;
+    --orange: orange;
+    --lemon: greenyellow;
+    --degraded:linear-gradient(90deg, var(var(--teal), var(--gris)));    
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+*::selection{
+    background: var(--gris);
+    color: white;
+
+}
+
+html{
+font-size: 90%;
+
+
+}
+body{
+    background: white;
+}
+
+header{
+    position: static;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: white ;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 3rem;
+    color: var(--teal);
+}
+
+header .logo span{
+    font-size: 3.5rem;
+    color: var(--orange);
+}
+
+header .navbar a{
+
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: var(--gris);
+}
+
+header .navbar a:hover{
+    color: var(--teal);
+}
+
+header input{
+    display:none;
+}
+
+header label{
+    font-size:  3rem;
+    color: var(--gris);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#contenedor{
+
+width: 1200px;
+height: 1000px;
+margin: 0.5em auto;
+padding: 0.5em;
+}
+
+#superior{
+
+    height: 35%;
+    background: teal;
+}
+
+#foto{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.redonda {
+    width:60%;
+    height:80%;
+    border-radius:100%;
+    margin: 2em auto;
+    padding: 1em;
+    display: block;
+ }
+
+#degree{
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 1rem;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#profile{
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 2rem;
+    text-align: left;
+    font-weight: lighter;
+}
+
+#bloque1{
+    height: 40%;
+}
+
+#bloque2{
+    height: 40%;
+}
+
+
+#contactInfo{
+width: 45%;
+height: 100%;
+float: left;
+padding: 1rem;
+margin: auto;
+
+}
+#workExp{
+    width: 55%;
+    height: 100%;
+    float: right;
+    padding: 1rem;
+    margin: auto;
+    
+    }
+
+
+@media (max-width:1200px) {
+    html{
+        font-size: 100%;
+    }
+
+}
+
+@media (max-width:768px) {
+    header label{
+        visibility:visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    }
+
+}
+
+header .titulo{
+    font-size: 3rem;
+    color: var(--teal);
+}
+
+
+td{
+
+    padding: 0.5rem;
+    font-size: 130%;
+
+}
+
+#icono{
+
+    width: 60%;
+    height: 60%;
+
+}
+
+p{
+
+    padding:  0.5rem;
+    font-size: 120%;
+}
+
+#personalRef{
+    width: 45%;
+    height: 100%;
+    float: left;
+    padding: 1rem;
+    margin: auto;
+    
+    }
+
+#EducationalHistory{
+        width: 55%;
+        height: 100%;
+        float: right;
+        padding: 1rem;
+        margin: auto;
+        
+        }
+
