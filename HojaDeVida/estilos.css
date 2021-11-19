@@ -29,6 +29,9 @@ font-size: 90%;
 
 
 }
+body{
+    background: white;
+}
 
 header{
     position: static;
@@ -65,6 +68,10 @@ header .navbar a:hover{
     color: var(--teal);
 }
 
+header input{
+    display:none;
+}
+
 header label{
     font-size:  3rem;
     color: var(--gris);
@@ -80,6 +87,71 @@ height: 1000px;
 margin: 0.5em auto;
 padding: 0.5em;
 }
+
+#superior{
+
+    height: 35%;
+    background: teal;
+}
+
+#foto{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.redonda {
+    width:60%;
+    height:80%;
+    border-radius:100%;
+    margin: 2em auto;
+    padding: 1em;
+    display: block;
+ }
+
+#degree{
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 1rem;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#profile{
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 2rem;
+    text-align: left;
+    font-weight: lighter;
+}
+
+#bloque1{
+    height: 40%;
+}
+
+#bloque2{
+    height: 40%;
+}
+
+
+#contactInfo{
+width: 45%;
+height: 100%;
+float: left;
+padding: 1rem;
+margin: auto;
+
+}
+#workExp{
+    width: 55%;
+    height: 100%;
+    float: right;
+    padding: 1rem;
+    margin: auto;
+    
+    }
 
 
 @media (max-width:1200px) {
@@ -113,32 +185,42 @@ header .titulo{
     color: var(--teal);
 }
 
-.contenedor{
-align-content: center;
-justify-content: center;
-display:grid;
-height: 100vh;
+
+td{
+
+    padding: 0.5rem;
+    font-size: 130%;
+
 }
 
-.btn{
-border: 3px solid rgba(100,100,100,0.1);
-margin-bottom: 20px;
-padding: 20px;
-width: 300px;
-font-size: 16px;
-color: #FFF;
-border-radius: 8px;
-cursor: pointer;
-background-size: 300%;
-background-image: linear-gradient(to left, #00b0b0,#008080,#00b0b0 );
+#icono{
+
+    width: 60%;
+    height: 60%;
+
 }
 
-.btn:hover{
+p{
 
-    background-image: linear-gradient(to left, #009b9b,#008585,#009b9b );
+    padding:  0.5rem;
+    font-size: 120%;
 }
 
-.btn:active{
+#personalRef{
+    width: 45%;
+    height: 100%;
+    float: left;
+    padding: 1rem;
+    margin: auto;
+    
+    }
 
-    background-image: linear-gradient(to left, #009595,#007d7d,#009595 );
-}
+#EducationalHistory{
+        width: 55%;
+        height: 100%;
+        float: right;
+        padding: 1rem;
+        margin: auto;
+        
+        }
+
