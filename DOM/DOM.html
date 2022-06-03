@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <header >
+        <a href="" class="logo" >
+       <span>Consulta - </span> DOM
+
+            <nav class="navbar">
+                <a href="../index.html">Atrás</a>
+            </nav>
+        </a>
+    </header>
+
+
+
+<div id="main-container"> 
+    
+<h1>Definición</h1>
+<p>La W3C define el DOM o "Modelo de Objetos del Documento" como "una interfaz de programación de 
+        aplicaciones (API) para documentos HTML y XML." Es decir es la base o programa base sobre la que 
+        se construyen los documentos de HTML y XML. Todos los navegadores y otras aplicaciones que quieran 
+        mostrar documentos en estos formatos deben tener este programa base o interfaz. La W3C indica que 
+        el DOM "define la estructura lógica de los documentos y el modo en que se accede y manipula un 
+        documento."
+    
+    La W3C especifica: "Con el Modelo de Objetos del Documento los programadores pueden construir 
+        documentos, navegar por su estructura, y añadir, modificar o eliminar elementos y contenido". 
+        Es decir que tiene una escructura flexible en la cual se pueden añadir o quitar elementos.
+    </p> 
+    <h1>Estructura</h1>
+    <p>LEl DOM los documentos tienen una estructura parecida a un arbol, creando una estructura jerarquica 
+        en la que de un objeto principal pueden depender varios secundarios. Esto se ve claramente en la 
+        escructura que tiene la página de HTML, la cual consta de etiquetas anidadas.</p>
+        
+    <p>Por ejemplo si tenemos una página web sencilla:</p>
+    <img src="images/img1.PNG">
+
+    <p>En el DOM se representa como una estructura de arbol de la siguiente manera:</p>
+    <img src="images/arbol_dom.gif">
+
+    <p>Cada uno de los recuadros de la estructura anterior es un nodo. Los nodos son los elementos básicos de la estructura del DOM. Estos se relacionan unos con otros en una estructura jerárquica, de modo que cada nodo tiene un nodo superior del que depende, que es el nodo padre. Cada nodo puede tener 0, 1, ó varios nodos dependientes de él, éstos serán los nodos hijos. Los nodos que están a un mismo nivel, dependiendo todos ellos del mismo nodo padre, son nodos hermanos. Todo el arbol del DOM depende de un nodo principal a partir del cual se generan todos los demás. Es el nodo Document.
+    </p>
+
+    <h1>Tipos de nodos</h1>
+        
+    <p>Existen 12 tipos de nodos en realidad en las páginas web sólo tenemos los 5 siguientes:</p> 
+        
+        <li><b>Document:</b> nodo raiz del que derivan todos los demas.</li>
+        <li><b>Element:</b> Cada una de las etiquetas HTML. Es el unico nodo que puede contener atributos y del que pueden derivar otros nodos.</li>
+        <li><b>Attr:</b> Cada atributo de una etiqueta genera un nodo Attr, el cual contiene también su valor (como una propiedad). Es hijo del nodo element (etiqueta) que lo contiene.</li>
+        <li><b>Text:</b> Contiene el texto encerrado por una etiqueta HTML (hijo del nodo Element).</li>
+        <li><b>Comment:</b> Los comentarios incluidos en la pagina HTML también generan sus nodos.</li>
+    
+    <p>Los demás tipos de nodos son: CDATASection, EntityReference, Entity, ProcessingInstruction, DocumentType, DocumentFragment, Notation. Estos se usan en el lenguaje XML, pero en HTML, si se emplean, suelen ser elementos fijos bastante definidos (etiqueta Doctype, caracteres de escape, etc). Veamos cuáles son estos nodos:</p>
+    
+
+    <li><b>CDatasection :</b> Nodo que puede contener caracteres de escape escritos normalmente.</li>
+    <li><b>DocumentType :</b> Declaración o etiqueta Doctype.</li> 
+    <li><b>DocumentFragment :</b> Fragmento o porción del arbol del DOM: Aunque no aparece en el documento HTML permite a Javascript (mediante los métodos del DOM) seleccionar un trozo del documento.</li> 
+    <li><b>Entity :</b> Caracter de escape o Entidad en XML.</li> 
+    <li><b>ntityReference :</b>E Referencia a entidad XML.</li>
+    <li><b>ProcessingInstrution :</b> Instrucciones de procesamiento.</li>
+    <li><b>Notation Anotaciones:</b> parecido a "comment", pero puede salir en pantalla en XML.</li> 
+
+
+</div>
+
+</body>
+</html>

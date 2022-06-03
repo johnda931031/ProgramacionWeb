@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --teal: #009999;
+    --gris: #808080;
+    --orange: orange;
+    --lemon: greenyellow;
+    --degraded:linear-gradient(90deg, var(var(--teal), var(--gris)));    
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+*::selection{
+    background: var(--gris);
+    color: white;
+
+}
+
+html{
+font-size: 90%;
+
+
+}
+
+header{
+    position: static;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: white ;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 3rem;
+    color: var(--teal);
+}
+
+header .logo span{
+    font-size: 3.5rem;
+    color: var(--orange);
+}
+
+header .navbar a{
+
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: var(--gris);
+}
+
+header .navbar a:hover{
+    color: var(--teal);
+}
+
+header label{
+    font-size:  3rem;
+    color: var(--gris);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#contenedor{
+
+width: 1200px;
+height: 1000px;
+margin: 0.5em auto;
+padding: 0.5em;
+}
+
+
+@media (max-width:1200px) {
+    html{
+        font-size: 100%;
+    }
+
+}
+
+@media (max-width:768px) {
+    header label{
+        visibility:visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    }
+
+}
+
+header .titulo{
+    font-size: 3rem;
+    color: var(--teal);
+}
+
+.contenedor{
+align-content: center;
+justify-content: center;
+display:grid;
+height: 100vh;
+}
+
+.btn{
+border: 3px solid rgba(100,100,100,0.1);
+margin-bottom: 20px;
+padding: 20px;
+width: 300px;
+font-size: 16px;
+color: #FFF;
+border-radius: 8px;
+cursor: pointer;
+background-size: 300%;
+background-image: linear-gradient(to left, #00b0b0,#008080,#00b0b0 );
+}
+
+.btn:hover{
+
+    background-image: linear-gradient(to left, #009b9b,#008585,#009b9b );
+}
+
+.btn:active{
+
+    background-image: linear-gradient(to left, #009595,#007d7d,#009595 );
+}

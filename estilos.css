@@ -25,9 +25,7 @@
 }
 
 html{
-font-size: 90%;
-
-
+font-size: 85%;
 }
 
 header{
@@ -35,7 +33,6 @@ header{
     top:0;
     left:0;
     width: 100%;
-    background-color: white ;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     padding: 2rem 5%;
     display: flex;
@@ -73,18 +70,80 @@ header label{
     opacity: 0;
 }
 
-#contenedor{
+.contenedor{
 
-width: 1200px;
-height: 1000px;
-margin: 0.5em auto;
-padding: 0.5em;
+    position: absolute;
+    width: 100%;
+    height: 780px;
+    background: url(/images/background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: calc(100% - 4rem);
+    
 }
+
+.contenidoNuevo {
+    /* contenido */
+    margin: 2%;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    background-color: rgb(222, 222, 222) ;
+    padding: 2%;
+    
+}
+    
+
+
+.talleresCard {
+    background: rgba(84, 118, 185, 0.5);
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+
+.consultasCard {
+
+    background: rgba(109, 228, 16, 0.5);
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.retosCard {
+    background: rgba(154, 104, 67, 0.5);
+    border-radius: 25px;
+    text-align: center;  
+}
+
+ul {
+
+    display: inline-block; 
+    text-align: left;
+}
+
+.pieDePagina{
+
+    margin: 2%;
+    display: grid;
+    gap: 0.5rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    background-color: rgb(222, 222, 222) ;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
 
 
 @media (max-width:1200px) {
     html{
-        font-size: 100%;
+        font-size: 80%;
     }
 
 }
@@ -96,14 +155,15 @@ padding: 0.5em;
     }
 
     header .navbar{
-        position: absolute;
-        top: 100%;
+        position: fixed;
         left: 0%;
         width: 100%;
         background: white;
         padding: 1rem 2rem;
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        z-index:1;
+        bottom: 0rem;
     }
 
 }
@@ -113,12 +173,6 @@ header .titulo{
     color: var(--teal);
 }
 
-.contenedor{
-align-content: center;
-justify-content: center;
-display:grid;
-height: 100vh;
-}
 
 .btn{
 border: 3px solid rgba(100,100,100,0.1);

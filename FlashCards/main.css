@@ -1,0 +1,124 @@
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --verde: #009999;
+    --gris: #808080;
+    --orange: orange;
+    --lemon: greenyellow;
+    --degraded:linear-gradient(90deg, var(var(--teal), var(--gris)));    
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    
+}
+
+*::selection{
+     background: var(--verde);
+     color: rgb(255, 255, 255);
+}
+
+
+header{
+      position: static;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f9f9f9;
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+      padding: 2rem 9%;
+      display:flex ;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+}
+
+header .logo{
+    font-size: 3rem;
+    color: var(--verde)
+}
+
+header .logo span{
+      color: var(--verde);
+}
+
+header .navbar a{
+
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: gray;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+   }
+   @font-face {
+    font-family: Montserrat;
+    src: url('Montserrat-Medium.ttf');
+   }
+   #activityTitle{
+    text-align:center;
+    font-size:38px;
+    font-family:Montserrat,Arial;
+    margin-top:50px;
+    color: #808080;
+   }
+  
+   #cardArea{
+    width:500px;
+    height:200px;
+    margin:auto;
+    margin-top:50px;
+    border:3px solid #ABB7B7;
+    border-radius:5px;
+    position:relative;
+    overflow: hidden;
+    border-radius:25px;
+
+   }
+   .card{
+    width:500px;
+    height:200px;   
+    position:absolute;
+    text-align:center;
+    line-height:65px;       
+    font-size:18px;
+    color:#efefef;
+    font-family:'Poppins', sans-serif;
+    cursor:pointer;
+    border-radius:25px;  
+   }
+
+   #nextButton{
+    width:80px;
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    cursor:pointer;
+    color:#efefef;
+    margin:auto;
+    margin-top:30px;
+    background-color:#019875;
+    border: 2px solid #1E824C;
+    border-radius:5px;
+    font-family:'Poppins', sans-serif;
+   }
+   #nextButton:hover{
+    opacity:.6;
+   }
+   #finalMessage{
+    text-align:center;
+    font-size:30px;
+    margin-top:30px;
+    font-family:'Poppins', sans-serif;
+   }

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecNoticias</title>
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body onload="onLoad()">
+
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+
+  <div class="container">
+    <!-- Navegacion -->
+    <nav class="nav-main">
+      <!-- Logo -->
+      <img src="img/brand.png" alt="TechNews Logo" class="nav-brand">
+      <!-- Nav Izq -->
+      <ul class="nav-menu">
+        <li>
+          <a href="#">Desarrollo Web</a>
+        </li>
+        <li>
+          <a href="#">Inteligencia Artificial</a>
+        </li>
+        <li>
+          <a href="#">Machine Learning</a>
+        </li>
+        <li>
+          <a href="#">BlockChain</a>
+        </li>
+        <li>
+          <a href="#">CriptoMonedas</a>
+        </li>
+        <li>
+          <a href="#">Más</a>
+        </li>
+      </ul>
+
+      <!-- Nav Derecho -->
+      <ul class="nav-menu-right">
+        <li>
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+<!-- API Clima -->
+    <section class="apiClima">
+      <div id="loader" class="loader">Loading...</div>
+        <div id="containerClima" class="contaier">
+            <div class="block">
+                <div id="location"></div>
+                <div id="date"></div>
+                <div id="description"></div>
+            </div>
+            <div class="block">
+                <div class="information-container">
+                    Temperature
+                    <div class="information" id="temperature"></div>
+                </div>
+                <div class="information-container">
+                    Humidity
+                    <div class="information" id="humidity"></div>
+                </div>
+                <div class="information-container">
+                    Pressure
+                    <div class="information" id="pressure"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Principal -->
+    <header class="showcase">
+      <h2>Grandes TecNovedades Hoy!</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolor laudantium rerum, excepturi est praesentium
+        natus qui? Tempora rerum, numquam inventore eligendi in, nostrum reprehenderit, eum cumque fugit eaque
+        similique!</p>
+      <a href="#" class="btn">
+        Membresía <i class="fas fa-chevron-right"></i>
+      </a>
+    </header>
+
+    <!-- Noticias -->
+    <div class="news-cards">
+      <div>
+        <img src="img/news1.jpg" alt="" />
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+        </p>
+        <a href="#">Aprende Más  <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news2.jpg" alt="" />
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+        </p>
+        <a href="#">Aprende Más  <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news3.jpg" alt="" />
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+        </p>
+        <a href="#">Aprende Más  <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news4.jpg" alt="" />
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+        </p>
+        <a href="#">Aprende Más  <i class="fas fa-angle-double-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Noticias-->
+    <section class="cards-banner-one">
+      <div class="content">
+        <h2>Lorem, ipsum dolor.</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat maxime facilis quasi alias illo, fugiat
+          cupiditate porro dolores tenetur delectus!</p>
+        <a href="#" class="btn">Aprende Más <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    
+    <div class="news-cards">
+      <div>
+        <img src="img/news1.jpg" alt="" />
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+        </p>
+        <a href="#">Aprende Más <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news2.jpg" alt="" />
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+        </p>
+        <a href="#">Aprende Más  <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news3.jpg" alt="" />
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+        </p>
+        <a href="#">Aprende Más  <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news4.jpg" alt="" />
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+        </p>
+        <a href="#">Aprende Más  <i class="fas fa-angle-double-right"></i></a>
+      </div>
+    </div>
+
+    <section class="cards-banner-two">
+      <div class="content">
+        <h2>Lorem, ipsum dolor.</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui laudantium id quam magni accusantium,
+          veritatis, ipsam labore, reprehenderit dolore repudiandae nemo sint deserunt! Suscipit facilis qui inventore
+          consequatur fugit.</p>
+        <a href="#" class="btn">Aprende Más <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Follow -->
+    <section class="social">
+      <p>Síguenos</p>
+      <div class="links">
+        <a href="https://facebook.com">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="footer-links">
+    <div class="footer-container">
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Explora TecNoticias</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">Blockchain</a>
+        </li>
+        <li>
+          <a href="#">Machine Learning</a>
+        </li>
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        <li>
+          <a href="#">Quantum Computing</a>
+        </li>
+        <li>
+          <a href="#">Startup</a>
+        </li>
+        <li>
+          <a href="#">Cryptocurrencies</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Acerca de</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">Términos de Uso</a>
+        </li>
+        <li>
+          <a href="#">Política de Provacidad</a>
+        </li>
+        <li>
+          <a href="#">Cookies</a>
+        </li>
+        <li>
+          <a href="#">Ayuda Accesibilidad</a>
+        </li>
+        <li>
+          <a href="#">Avisos</a>
+        </li>
+        <li>
+          <a href="#">Publicite con nosotros</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Servicios</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">Accesso Móvil</a>
+        </li>
+        <li>
+          <a href="#">Contáctese con TecNoticias</a>
+        </li>
+        <li>
+          <a href="#">Configure nuevas alertas</a>
+        </li>
+        <li>
+          <a href="#">App TecNoticias</a>
+        </li>
+        <li>
+          <a href="#">Noticiero Digital</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>TecNoticias Copyright</h3>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

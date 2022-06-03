@@ -1,0 +1,70 @@
+{"questionlist":[
+    {"cardfront":"HTML",
+    "cardback":"Lenguaje de Marcado de Hipertexto, se utiliza para estructurar y desplegar una página web."
+    },
+    {"cardfront":"ETIQUETA HTML",
+        "cardback":"Fragmentos de código que permiten crear elementos HTML."
+    },
+    {"cardfront":"ELEMENTO HTML",
+        "cardback":"Es un tipo de componente de documento HTML, uno de los tipos de nodos que conforman el árbol HTML."
+    },
+    {"cardfront":"JAVASCRIPT",
+    "cardback":"Es un lenguaje de programación que permite implementar funciones complejas las páginas web."
+    },
+    {"cardfront":"DOM",
+        "cardback":"Es una API definida para representar e interactuar con cualquier documento HTML o XML."
+    },
+    {"cardfront":"FRAMEWORK",
+        "cardback":"Es un esquema o marco de trabajo que ofrece una estructura base, una especie de plantilla para la organización y desarrollo de proyectos específicos de software."
+    },
+    {"cardfront":"DESARROLLO DE SOFTWARE",
+    "cardback":"Se refiere a un conjunto de actividades informáticas dedicadas al proceso de creación, diseño, despliegue y compatibilidad de software."
+    },
+    {"cardfront":"ENTORNO DE DESARROLLO INTEGRADO (IDE)",
+    "cardback":"Es un sistema de software para el diseño de aplicaciones que combina herramientas comunes para desarrolladores en una sola interfaz de usuario gráfica."
+    },
+    {"cardfront":"FRONTEND",
+    "cardback":"Es la parte de una aplicación que interactúa con los usuarios, es conocida como el lado del cliente."
+    },
+    {"cardfront":"BACKEND",
+    "cardback":"Se refiere a todo lo que se encuentra al interior de las aplicaciones y al que a menudo se le denomina “el lado del servidor."
+    },
+    {"cardfront":"VISUAL STUDIO CODE",
+    "cardback":"Es un editor de código fuente desarrollado por Microsoft que permite trabajar con diversos lenguajes de programación."
+    },
+    {"cardfront":"JAVASCRIPT OBJECT NOTATION - JSON",
+    "cardback":"Es un formato ligero de intercambio de datos, sencillo de leer y escribir para los programadores, simple de interpretar y generar para las máquinas."
+    }, 
+    {"cardfront":"INTERNET",
+    "cardback":"Sistema descentralizado de redes interconectadas mediante distintos protocolos de alcance global, que ofrece una gran variedad de servicios y recursos."
+    },
+    {"cardfront":"SITIO WEB",
+        "cardback":"Es el conjunto de archivos electrónicos y páginas web referentes a un tema en particular."
+    },
+    {"cardfront":"Hypertext Transfer Protocol - HTTP",
+    "cardback":"Es un protocolo de la capa de aplicación para la transmisión de documentos hipermedia, como HTML. Fue diseñado para la comunicación entre los navegadores y servidores web."
+    },
+    {"cardfront":"CLIENTE",
+    "cardback":"Es una aplicación informática o un ordenador que consume un servicio remoto en otro ordenador conocido como servidor."
+    },
+    {"cardfront":"SERVIDOR",
+    "cardback":"Es un sistema que proporciona recursos, datos, servicios o programas a otros ordenadores, conocidos como clientes, a través de una red."
+    },
+    {"cardfront":"REPOSITORIO",
+    "cardback":"Es un sitio web donde se almacena información digital, los archivos almacenados pueden ser accedidos por quienes lo permita el administrador."
+    },
+    {"cardfront":"GITHUB",
+        "cardback":"Es un servicio basado en la nube que aloja un Sistema de Control de Versiones (VCS) llamado Git."
+    },
+    {"cardfront":"NEOCITIES",
+    "cardback":"Es un servicio de alojamiento web comercial para páginas estáticas."
+    },   
+    {"cardfront":"FIGMA",
+        "cardback":"Es un editor de gráficos vectorial y una herramienta de generación de prototipos, principalmente basada en la web."
+    },
+    {"cardfront":"DISEÑO WEB",
+        "cardback":"Es un área enfocada en el desarrollo de interfaces digitales, como el diseño de sitios y aplicaciones para web."
+    }
+        
+    
+]}
